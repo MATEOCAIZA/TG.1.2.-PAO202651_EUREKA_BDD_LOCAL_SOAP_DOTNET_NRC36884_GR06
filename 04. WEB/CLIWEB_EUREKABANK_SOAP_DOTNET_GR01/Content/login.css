@@ -1,0 +1,16 @@
+/* Styles for the login template */
+html, body { height: 100%; margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+.login-wrapper { display: flex; min-height: 100vh; }
+.login-image { flex: 1; background: linear-gradient(120deg, rgba(26,62,107,0.45), rgba(38,86,143,0.45)), url('/login.jpeg') center/cover no-repeat; }
+.login-panel { width: 420px; display: flex; flex-direction: column; justify-content: center; padding: 48px 40px; background: #fff; }
+.bank-logo { font-size: 2rem; font-weight: 700; color: #1a3e6b; margin-bottom: 6px; }
+.bank-sub { color: #6c757d; margin-bottom: 32px; font-size: .95rem; }
+.btn-bank { background: #1a3e6b; border-color: #1a3e6b; }
+.btn-bank:hover { background: #26568f; border-color: #26568f; }
+
+/* Ensure good spacing on small screens */
+@media (max-width: 767.98px) {
+  .login-wrapper { flex-direction: column; }
+  .login-panel { width: 100%; padding: 32px; }
+  .login-image { display: none !important; }
+}

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://26.243.233.245:8086/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://26.243.233.245:8086/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://26.243.233.245:8086/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WS_EUREKABANK_SOAP_DOTNET_GR06" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ObtenerCuentasPorSucursal_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerCuentasPorSucursal" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ObtenerCuentasPorSucursal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerCuentasPorSucursalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ObtenerMovimientos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerMovimientos" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ObtenerMovimientos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerMovimientosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RegistrarMovimiento_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarMovimiento" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RegistrarMovimiento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarMovimientoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BloquearCuenta_InputMessage">
+    <wsdl:part name="parameters" element="tns:BloquearCuenta" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BloquearCuenta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BloquearCuentaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DesbloquearCuenta_InputMessage">
+    <wsdl:part name="parameters" element="tns:DesbloquearCuenta" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DesbloquearCuenta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DesbloquearCuentaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ObtenerTodasCuentasEstado_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerTodasCuentasEstado" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ObtenerTodasCuentasEstado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerTodasCuentasEstadoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Login" message="tns:IService1_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/LoginResponse" message="tns:IService1_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCuentasPorSucursal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ObtenerCuentasPorSucursal" message="tns:IService1_ObtenerCuentasPorSucursal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ObtenerCuentasPorSucursalResponse" message="tns:IService1_ObtenerCuentasPorSucursal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerMovimientos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ObtenerMovimientos" message="tns:IService1_ObtenerMovimientos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ObtenerMovimientosResponse" message="tns:IService1_ObtenerMovimientos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarMovimiento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/RegistrarMovimiento" message="tns:IService1_RegistrarMovimiento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/RegistrarMovimientoResponse" message="tns:IService1_RegistrarMovimiento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BloquearCuenta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BloquearCuenta" message="tns:IService1_BloquearCuenta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BloquearCuentaResponse" message="tns:IService1_BloquearCuenta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DesbloquearCuenta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DesbloquearCuenta" message="tns:IService1_DesbloquearCuenta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DesbloquearCuentaResponse" message="tns:IService1_DesbloquearCuenta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerTodasCuentasEstado">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ObtenerTodasCuentasEstado" message="tns:IService1_ObtenerTodasCuentasEstado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ObtenerTodasCuentasEstadoResponse" message="tns:IService1_ObtenerTodasCuentasEstado_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/IService1/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCuentasPorSucursal">
+      <soap:operation soapAction="http://tempuri.org/IService1/ObtenerCuentasPorSucursal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerMovimientos">
+      <soap:operation soapAction="http://tempuri.org/IService1/ObtenerMovimientos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarMovimiento">
+      <soap:operation soapAction="http://tempuri.org/IService1/RegistrarMovimiento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BloquearCuenta">
+      <soap:operation soapAction="http://tempuri.org/IService1/BloquearCuenta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DesbloquearCuenta">
+      <soap:operation soapAction="http://tempuri.org/IService1/DesbloquearCuenta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerTodasCuentasEstado">
+      <soap:operation soapAction="http://tempuri.org/IService1/ObtenerTodasCuentasEstado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://26.243.233.245:8086/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
