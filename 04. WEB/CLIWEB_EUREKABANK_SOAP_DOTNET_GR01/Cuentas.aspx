@@ -11,7 +11,6 @@
     <div>
         <asp:Label ID="lblEmpleado" runat="server" CssClass="badge bg-primary fs-6 me-2" />
         <a href="Transaccion.aspx" class="btn btn-success btn-sm">+ Nueva Transacci&oacute;n</a>
-        <a href="MashUp.aspx"      class="btn btn-warning btn-sm ms-1">MashUp</a>
     </div>
 </div>
 

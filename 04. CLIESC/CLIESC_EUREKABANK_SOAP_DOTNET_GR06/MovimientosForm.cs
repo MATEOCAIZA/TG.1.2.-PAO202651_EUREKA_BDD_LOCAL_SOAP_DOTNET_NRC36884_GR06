@@ -15,6 +15,7 @@ namespace CLIESC_EUREKABANK_SOAP_DOTNET_GR01
             _cuentaId     = cuentaId;
             _numeroCuenta = numeroCuenta;
             InitializeComponent();
+            HudTheme.Apply(this);
             Text = $"Movimientos – Cuenta {numeroCuenta}";
         }
 

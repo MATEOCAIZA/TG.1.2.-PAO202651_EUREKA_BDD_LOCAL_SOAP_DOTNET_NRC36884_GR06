@@ -14,6 +14,7 @@
     </asp:PlaceHolder>
 
     <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/Content/eureka-hud.css" rel="stylesheet" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
@@ -51,7 +52,6 @@
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Cuentas.aspx">Cuentas</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Transaccion.aspx">Transacci&oacute;n</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/MashUp.aspx">MashUp</a></li>
                     </ul>
                     <ul class="navbar-nav">
                         <li class="nav-item">

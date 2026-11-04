@@ -10,6 +10,7 @@ namespace CLIESC_EUREKABANK_SOAP_DOTNET_GR01
         public MashUpForm()
         {
             InitializeComponent();
+            HudTheme.Apply(this);
             timer.Interval = 3000;
             timer.Tick    += (s, e) => CargarEstado();
             timer.Start();

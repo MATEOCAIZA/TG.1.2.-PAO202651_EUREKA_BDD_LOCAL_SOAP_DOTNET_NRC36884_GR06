@@ -5,7 +5,7 @@ using System.ServiceModel;
 
 namespace EurekaServiceRef
 {
-    [DataContract(Namespace = "http://schemas.datacontract.org/2004/07/WS_EUREKABANK_SOAP_DOTNET_GR01")]public class EmpleadoInfo
+    [DataContract(Namespace = "http://schemas.datacontract.org/2004/07/WS_EUREKABANK_SOAP_DOTNET_GR06")]public class EmpleadoInfo
     {
         [DataMember] public int    EmpleadoID      { get; set; }
         [DataMember] public string Nombre          { get; set; }
@@ -18,7 +18,7 @@ namespace EurekaServiceRef
         [DataMember] public string Mensaje         { get; set; }
     }
 
-    [DataContract(Namespace = "http://schemas.datacontract.org/2004/07/WS_EUREKABANK_SOAP_DOTNET_GR01")]public class CuentaInfo
+    [DataContract(Namespace = "http://schemas.datacontract.org/2004/07/WS_EUREKABANK_SOAP_DOTNET_GR06")]public class CuentaInfo
     {
         [DataMember] public int     CuentaID           { get; set; }
         [DataMember] public string  NumeroCuenta       { get; set; }
@@ -30,7 +30,7 @@ namespace EurekaServiceRef
         [DataMember] public string  BloqueadaPorNombre { get; set; }
     }
 
-    [DataContract(Namespace = "http://schemas.datacontract.org/2004/07/WS_EUREKABANK_SOAP_DOTNET_GR01")]public class MovimientoInfo
+    [DataContract(Namespace = "http://schemas.datacontract.org/2004/07/WS_EUREKABANK_SOAP_DOTNET_GR06")]public class MovimientoInfo
     {
         [DataMember] public int      MovimientoID     { get; set; }
         [DataMember] public string   NumeroCuenta     { get; set; }
@@ -44,14 +44,14 @@ namespace EurekaServiceRef
         [DataMember] public string   EmpleadoNombre   { get; set; }
     }
 
-    [DataContract(Namespace = "http://schemas.datacontract.org/2004/07/WS_EUREKABANK_SOAP_DOTNET_GR01")]public class ResultadoOperacion
+    [DataContract(Namespace = "http://schemas.datacontract.org/2004/07/WS_EUREKABANK_SOAP_DOTNET_GR06")]public class ResultadoOperacion
     {
         [DataMember] public bool   Exito           { get; set; }
         [DataMember] public string Mensaje         { get; set; }
         [DataMember] public string NumeroOperacion { get; set; }
     }
 
-    [DataContract(Namespace = "http://schemas.datacontract.org/2004/07/WS_EUREKABANK_SOAP_DOTNET_GR01")]public class CuentaEstadoInfo
+    [DataContract(Namespace = "http://schemas.datacontract.org/2004/07/WS_EUREKABANK_SOAP_DOTNET_GR06")]public class CuentaEstadoInfo
     {
         [DataMember] public int     CuentaID           { get; set; }
         [DataMember] public string  NumeroCuenta       { get; set; }

@@ -11,7 +11,9 @@ namespace CLICON_EUREKABANK_SOAP_DOTNET_GR01
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
-            Console.Title = "Eureka Bank – Cliente Consola";
+            // montos con punto decimal y $ en cualquier PC (es-ES/es-EC usan coma)
+            System.Globalization.CultureInfo.DefaultThreadCurrentCulture = System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
+            Console.Title = "EurekaBank – Terminal de Operaciones";
             Encabezado();
 
             if (!Login()) return;
@@ -22,22 +24,20 @@ namespace CLICON_EUREKABANK_SOAP_DOTNET_GR01
                 salir = MenuPrincipal();
             }
 
-            Console.WriteLine("\nSesion cerrada. Hasta pronto.");
-            Console.ReadKey();
+            Console.WriteLine("\n  Sesion cerrada. Hasta pronto.");
+            if (!Console.IsInputRedirected) Console.ReadKey();
         }
 
         // ── Login ──────────────────────────────────────────────────
         static bool Login()
         {
-            Console.WriteLine("========================================");
-            Console.WriteLine("  ACCESO AL SISTEMA");
-            Console.WriteLine("========================================");
+            Separador("Acceso al sistema");
             int intentos = 3;
             while (intentos-- > 0)
             {
-                Console.Write("  Usuario  : ");
+                Prompt("Usuario");
                 string user = Console.ReadLine()?.Trim() ?? "";
-                Console.Write("  Contrasena: ");
+                Prompt("Contraseña");
                 string pass = LeerPassword();
 
                 try
@@ -75,23 +75,18 @@ namespace CLICON_EUREKABANK_SOAP_DOTNET_GR01
         // ── Menu principal ─────────────────────────────────────────
         static bool MenuPrincipal()
         {
-            Console.WriteLine("========================================");
-            Console.WriteLine("  MENU PRINCIPAL");
-            Console.WriteLine("========================================");
-            Console.WriteLine("  [1] Consultar cuentas de la sucursal");
-            Console.WriteLine("  [2] Ver movimientos de una cuenta");
-            Console.WriteLine("  [3] Registrar transaccion");
-            Console.WriteLine("  [4] MashUp – estado de cuentas");
-            Console.WriteLine("  [5] Cerrar sesion");
-            Console.WriteLine("========================================");
-            Console.Write("  Opcion: ");
+            Separador("Menú principal");
+            Opcion("1", "Consultar cuentas de la sucursal");
+            Opcion("2", "Ver movimientos de una cuenta");
+            Opcion("3", "Registrar transacción");
+            Opcion("4", "Cerrar sesión");   // MashUp oculto
+            Prompt("Opción");
             switch (Console.ReadLine()?.Trim())
             {
                 case "1": ConsultarCuentas(); break;
                 case "2": VerMovimientos();   break;
                 case "3": RegistrarMovimiento(); break;
-                case "4": MashUp();           break;
-                case "5": return true;
+                case "4": case null: return true;
                 default:
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.WriteLine("  Opcion no valida.");
@@ -154,9 +149,9 @@ namespace CLICON_EUREKABANK_SOAP_DOTNET_GR01
                     foreach (var m in lista)
                     {
                         ConsoleColor color = m.Tipo == "Deposito" ? ConsoleColor.Green :
-                                             m.Tipo == "Retiro"   ? ConsoleColor.Red   : ConsoleColor.Cyan;
+                                             m.Tipo == "Retiro"   ? ConsoleColor.Red   : ConsoleColor.DarkYellow;
                         Console.ForegroundColor = color;
-                        Console.WriteLine($"  {m.NumeroOperacion,-15} {m.Fecha:dd/MM/yyyy HH:mm,-18} {m.Tipo,-14} {m.Monto,12:C} {m.SaldoAnterior,12:C} {m.SaldoPosterior,12:C} {m.EmpleadoNombre}");
+                        Console.WriteLine($"  {m.NumeroOperacion,-15} {m.Fecha,-18:dd/MM/yyyy HH:mm} {m.Tipo,-14} {m.Monto,12:C} {m.SaldoAnterior,12:C} {m.SaldoPosterior,12:C} {m.EmpleadoNombre}");
                         Console.ResetColor();
                     }
                     Console.WriteLine();
@@ -269,24 +264,43 @@ namespace CLICON_EUREKABANK_SOAP_DOTNET_GR01
             catch (Exception ex) { Error(ex); }
         }
 
-        // ── Helpers ────────────────────────────────────────────────
+        // ── Tema común de consola (mismo en los 4 clientes) ────────
+        const string NODO = "SOAP · .NET";
+
         static void Encabezado()
         {
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("╔══════════════════════════════════════╗");
-            Console.WriteLine("║          E U R E K A  B A N K        ║");
-            Console.WriteLine("║    Sistema Transaccional – Consola   ║");
-            Console.WriteLine("╚══════════════════════════════════════╝");
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+            Console.WriteLine("  ╔════════════════════════════════════════════════╗");
+            Console.Write("  ║ "); Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(" ▓▓ EUREKABANK ▓▓    TERMINAL DE OPERACIONES  ");
+            Console.ForegroundColor = ConsoleColor.DarkMagenta; Console.WriteLine(" ║");
+            Console.Write("  ║ "); Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write(string.Format(" NODO: {0,-20}   ESTADO: EN LÍNEA", NODO));
+            Console.ForegroundColor = ConsoleColor.DarkMagenta; Console.WriteLine(" ║");
+            Console.WriteLine("  ╚════════════════════════════════════════════════╝");
             Console.ResetColor();
-            Console.WriteLine();
         }
 
         static void Separador(string titulo)
         {
             Console.WriteLine();
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine($"  ── {titulo} ──");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("  ▌ " + titulo.ToUpper());
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+            Console.WriteLine("  ──────────────────────────────────────────────────");
             Console.ResetColor();
+        }
+
+        static void Opcion(string n, string texto)
+        {
+            Console.ForegroundColor = ConsoleColor.DarkYellow; Console.Write("  [" + n + "]");
+            Console.ResetColor(); Console.WriteLine(" " + texto);
+        }
+
+        static void Prompt(string p)
+        {
+            Console.ForegroundColor = ConsoleColor.DarkYellow; Console.Write("  » ");
+            Console.ResetColor(); Console.Write(p + ": ");
         }
 
         static void Error(Exception ex)
@@ -298,6 +312,7 @@ namespace CLICON_EUREKABANK_SOAP_DOTNET_GR01
 
         static string LeerPassword()
         {
+            if (Console.IsInputRedirected) return Console.ReadLine() ?? "";  // entrada por tubería (pruebas)
             string pass = "";
             ConsoleKeyInfo key;
             do

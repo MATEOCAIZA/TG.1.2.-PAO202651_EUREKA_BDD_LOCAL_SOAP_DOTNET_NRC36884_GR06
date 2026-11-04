@@ -12,6 +12,7 @@ namespace CLIESC_EUREKABANK_SOAP_DOTNET_GR01
         {
             _empleado = empleado;
             InitializeComponent();
+            HudTheme.Apply(this);
         }
 
         private void cmbTipo_SelectedIndexChanged(object sender, EventArgs e)

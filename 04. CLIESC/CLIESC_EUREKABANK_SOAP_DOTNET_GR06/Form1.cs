@@ -15,6 +15,7 @@ namespace CLIESC_EUREKABANK_SOAP_DOTNET_GR01
         public Form1()
         {
             InitializeComponent();
+            HudTheme.Apply(this);
         }
     }
 }

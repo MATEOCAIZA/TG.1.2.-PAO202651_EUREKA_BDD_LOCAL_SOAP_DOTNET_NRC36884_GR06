@@ -11,6 +11,7 @@ namespace CLIESC_EUREKABANK_SOAP_DOTNET_GR01
         public LoginForm()
         {
             InitializeComponent();
+            HudTheme.Apply(this);
         }
 
         protected override void OnLoad(EventArgs e)

@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Eureka Bank – Acceso</title>
+    <title>Eureka Bank &ndash; Acceso</title>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <style>
         html, body { height: 100%; margin: 0; background: #0a0f1e; }
@@ -33,13 +33,14 @@
         .btn-bank:hover { background: #1565c0; border-color: #1565c0; }
         .alert-msg { display: none; }
     </style>
+    <link href="Content/eureka-hud.css" rel="stylesheet" />
 </head>
 <body>
 <div class="login-wrap">
     <!-- PANEL IZQUIERDO: imagen del banco -->
     <div class="panel-left">
-        <%-- La vista cargará la imagen desde la raíz /login.jpeg --%>
-        <img src="/login.jpeg"
+        <%-- Imagen del tema común --%>
+        <img src="Content/hud.jpg"
              onerror="this.style.display='none'"
              alt="Eureka Bank" />
         <div class="bank-name">EUREKA BANK</div>

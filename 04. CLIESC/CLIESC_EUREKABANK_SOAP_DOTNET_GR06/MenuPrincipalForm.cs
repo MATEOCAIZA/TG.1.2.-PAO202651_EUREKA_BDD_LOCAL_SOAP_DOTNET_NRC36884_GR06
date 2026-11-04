@@ -13,6 +13,9 @@ namespace CLIESC_EUREKABANK_SOAP_DOTNET_GR01
         {
             _empleado = empleado;
             InitializeComponent();
+            HudTheme.Apply(this);
+            btnMashUp.Visible = false; // MashUp oculto
+            btnSalir.Location = btnMashUp.Location; // sin hueco en el menú
             lblBienvenida.Text = $"Bienvenido, {empleado.Nombre} {empleado.Apellido}  |  Rol: {empleado.Rol}  |  Sucursal: {empleado.NombreSucursal}";
         }
 
