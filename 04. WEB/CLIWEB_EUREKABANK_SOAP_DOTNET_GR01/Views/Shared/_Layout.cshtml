@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>[SOAP .NET] @ViewBag.Title &mdash; Eureka Bank</title>
+    @Styles.Render("~/Content/css")
+    <link rel="stylesheet" href="~/Content/eureka-hud.css" />
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div style="position:fixed;top:10px;right:12px;z-index:9999;padding:4px 10px;border:1px solid #8FE34F;background:#120B1F;color:#FF8C2E;font:bold 13px Consolas,monospace;letter-spacing:1px">&#9632; SOAP &middot; .NET</div>
+<nav class="navbar navbar-expand-sm navbar-dark" style="background:#1a3e6b">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="@Url.Action("Index","Cuentas")">&#127981; Eureka Bank</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto">
+                <li>@Html.ActionLink("Cuentas", "Index", "Cuentas", null, new { @class = "nav-link text-white" })</li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="@Url.Action("Logout","Auth")">&#128274; Cerrar sesi&oacute;n</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid py-4">
+    @RenderBody()
+</div>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@RenderSection("scripts", required: false)
+</body>
+</html>

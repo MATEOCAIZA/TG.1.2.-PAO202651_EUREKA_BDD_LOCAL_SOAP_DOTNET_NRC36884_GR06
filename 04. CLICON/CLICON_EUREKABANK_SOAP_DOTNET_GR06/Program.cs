@@ -13,7 +13,7 @@ namespace CLICON_EUREKABANK_SOAP_DOTNET_GR01
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             // montos con punto decimal y $ en cualquier PC (es-ES/es-EC usan coma)
             System.Globalization.CultureInfo.DefaultThreadCurrentCulture = System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
-            Console.Title = "EurekaBank – Terminal de Operaciones";
+            Console.Title = "[" + NODO + "] EurekaBank – Terminal de Operaciones";
             Encabezado();
 
             if (!Login()) return;

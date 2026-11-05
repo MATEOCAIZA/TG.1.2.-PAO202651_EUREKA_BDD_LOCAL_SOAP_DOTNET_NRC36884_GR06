@@ -61,42 +61,29 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginForm.cs">
+    <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.Designer.cs">
-      <DependentUpon>LoginForm.cs</DependentUpon>
+    <Compile Include="Forms\LoginForm.Designer.cs">
+      <DependentUpon>Forms\LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuPrincipalForm.cs">
+    <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuPrincipalForm.Designer.cs">
-      <DependentUpon>MenuPrincipalForm.cs</DependentUpon>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>Forms\MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CuentasForm.cs">
+    <Compile Include="Forms\MashUpForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CuentasForm.Designer.cs">
-      <DependentUpon>CuentasForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MovimientosForm.cs">
+    <Compile Include="Forms\MovimientosForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MovimientosForm.Designer.cs">
-      <DependentUpon>MovimientosForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TransaccionForm.cs">
+    <Compile Include="Forms\TransaccionForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TransaccionForm.Designer.cs">
-      <DependentUpon>TransaccionForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MashUpForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MashUpForm.Designer.cs">
-      <DependentUpon>MashUpForm.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Models\EurekaBankModels.cs" />
+    <Compile Include="Services\EurekaBankService.cs" />
     <Compile Include="Services\EurekaServiceClient.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="HudTheme.cs" />
@@ -149,7 +136,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="login.jpeg">
+    <Content Include="Resources\login.jpeg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
