@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\MATEO\\Desktop\\WS_EUREKABANK_SOAP_DOTNET_GR06\\",
+  "WorkspaceRootPath": "C:\\Users\\MATEO\\Desktop\\Grupal\\TG.1.2.-PAO202651_EUREKA_BDD_LOCAL_SOAP_DOTNET_NRC36884_GR06\\04. SERVIDOR\\WS_EUREKABANK_SOAP_DOTNET_GR06\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{10E5290C-4275-471E-9ACF-7E6D230CD8B4}|WS_EUREKABANK_SOAP_DOTNET_GR06\\WS_EUREKABANK_SOAP_DOTNET_GR06.csproj|c:\\users\\mateo\\desktop\\ws_eurekabank_soap_dotnet_gr06\\ws_eurekabank_soap_dotnet_gr06\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{10E5290C-4275-471E-9ACF-7E6D230CD8B4}|WS_EUREKABANK_SOAP_DOTNET_GR06\\WS_EUREKABANK_SOAP_DOTNET_GR06.csproj|c:\\users\\mateo\\desktop\\grupal\\tg.1.2.-pao202651_eureka_bdd_local_soap_dotnet_nrc36884_gr06\\04. servidor\\ws_eurekabank_soap_dotnet_gr06\\ws_eurekabank_soap_dotnet_gr06\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{10E5290C-4275-471E-9ACF-7E6D230CD8B4}|WS_EUREKABANK_SOAP_DOTNET_GR06\\WS_EUREKABANK_SOAP_DOTNET_GR06.csproj|solutionrelative:ws_eurekabank_soap_dotnet_gr06\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10E5290C-4275-471E-9ACF-7E6D230CD8B4}|WS_EUREKABANK_SOAP_DOTNET_GR06\\WS_EUREKABANK_SOAP_DOTNET_GR06.csproj|c:\\users\\mateo\\desktop\\ws_eurekabank_soap_dotnet_gr06\\ws_eurekabank_soap_dotnet_gr06\\service1.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{10E5290C-4275-471E-9ACF-7E6D230CD8B4}|WS_EUREKABANK_SOAP_DOTNET_GR06\\WS_EUREKABANK_SOAP_DOTNET_GR06.csproj|C:\\Users\\MATEO\\Desktop\\Grupal\\TG.1.2.-PAO202651_EUREKA_BDD_LOCAL_SOAP_DOTNET_NRC36884_GR06\\04. SERVIDOR\\WS_EUREKABANK_SOAP_DOTNET_GR06\\ws_eurekabank_soap_dotnet_gr06\\service1.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{10E5290C-4275-471E-9ACF-7E6D230CD8B4}|WS_EUREKABANK_SOAP_DOTNET_GR06\\WS_EUREKABANK_SOAP_DOTNET_GR06.csproj|solutionrelative:ws_eurekabank_soap_dotnet_gr06\\service1.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10E5290C-4275-471E-9ACF-7E6D230CD8B4}|WS_EUREKABANK_SOAP_DOTNET_GR06\\WS_EUREKABANK_SOAP_DOTNET_GR06.csproj|c:\\users\\mateo\\desktop\\ws_eurekabank_soap_dotnet_gr06\\ws_eurekabank_soap_dotnet_gr06\\iservice1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{10E5290C-4275-471E-9ACF-7E6D230CD8B4}|WS_EUREKABANK_SOAP_DOTNET_GR06\\WS_EUREKABANK_SOAP_DOTNET_GR06.csproj|C:\\Users\\MATEO\\Desktop\\Grupal\\TG.1.2.-PAO202651_EUREKA_BDD_LOCAL_SOAP_DOTNET_NRC36884_GR06\\04. SERVIDOR\\WS_EUREKABANK_SOAP_DOTNET_GR06\\ws_eurekabank_soap_dotnet_gr06\\iservice1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{10E5290C-4275-471E-9ACF-7E6D230CD8B4}|WS_EUREKABANK_SOAP_DOTNET_GR06\\WS_EUREKABANK_SOAP_DOTNET_GR06.csproj|solutionrelative:ws_eurekabank_soap_dotnet_gr06\\iservice1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -32,9 +32,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Web.config",
-              "DocumentMoniker": "C:\\Users\\MATEO\\Desktop\\WS_EUREKABANK_SOAP_DOTNET_GR06\\WS_EUREKABANK_SOAP_DOTNET_GR06\\Web.config",
+              "DocumentMoniker": "C:\\Users\\MATEO\\Desktop\\Grupal\\TG.1.2.-PAO202651_EUREKA_BDD_LOCAL_SOAP_DOTNET_NRC36884_GR06\\04. SERVIDOR\\WS_EUREKABANK_SOAP_DOTNET_GR06\\WS_EUREKABANK_SOAP_DOTNET_GR06\\Web.config",
               "RelativeDocumentMoniker": "WS_EUREKABANK_SOAP_DOTNET_GR06\\Web.config",
-              "ToolTip": "C:\\Users\\MATEO\\Desktop\\WS_EUREKABANK_SOAP_DOTNET_GR06\\WS_EUREKABANK_SOAP_DOTNET_GR06\\Web.config",
+              "ToolTip": "C:\\Users\\MATEO\\Desktop\\Grupal\\TG.1.2.-PAO202651_EUREKA_BDD_LOCAL_SOAP_DOTNET_NRC36884_GR06\\04. SERVIDOR\\WS_EUREKABANK_SOAP_DOTNET_GR06\\WS_EUREKABANK_SOAP_DOTNET_GR06\\Web.config",
               "RelativeToolTip": "WS_EUREKABANK_SOAP_DOTNET_GR06\\Web.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
@@ -45,27 +45,25 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "IService1.cs",
-              "DocumentMoniker": "C:\\Users\\MATEO\\Desktop\\WS_EUREKABANK_SOAP_DOTNET_GR06\\WS_EUREKABANK_SOAP_DOTNET_GR06\\IService1.cs",
+              "DocumentMoniker": "C:\\Users\\MATEO\\Desktop\\Grupal\\TG.1.2.-PAO202651_EUREKA_BDD_LOCAL_SOAP_DOTNET_NRC36884_GR06\\04. SERVIDOR\\WS_EUREKABANK_SOAP_DOTNET_GR06\\WS_EUREKABANK_SOAP_DOTNET_GR06\\IService1.cs",
               "RelativeDocumentMoniker": "WS_EUREKABANK_SOAP_DOTNET_GR06\\IService1.cs",
-              "ToolTip": "C:\\Users\\MATEO\\Desktop\\WS_EUREKABANK_SOAP_DOTNET_GR06\\WS_EUREKABANK_SOAP_DOTNET_GR06\\IService1.cs",
+              "ToolTip": "C:\\Users\\MATEO\\Desktop\\Grupal\\TG.1.2.-PAO202651_EUREKA_BDD_LOCAL_SOAP_DOTNET_NRC36884_GR06\\04. SERVIDOR\\WS_EUREKABANK_SOAP_DOTNET_GR06\\WS_EUREKABANK_SOAP_DOTNET_GR06\\IService1.cs",
               "RelativeToolTip": "WS_EUREKABANK_SOAP_DOTNET_GR06\\IService1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T20:54:31.799Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-03T20:54:31.799Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Service1.svc.cs",
-              "DocumentMoniker": "C:\\Users\\MATEO\\Desktop\\WS_EUREKABANK_SOAP_DOTNET_GR06\\WS_EUREKABANK_SOAP_DOTNET_GR06\\Service1.svc.cs",
+              "DocumentMoniker": "C:\\Users\\MATEO\\Desktop\\Grupal\\TG.1.2.-PAO202651_EUREKA_BDD_LOCAL_SOAP_DOTNET_NRC36884_GR06\\04. SERVIDOR\\WS_EUREKABANK_SOAP_DOTNET_GR06\\WS_EUREKABANK_SOAP_DOTNET_GR06\\Service1.svc.cs",
               "RelativeDocumentMoniker": "WS_EUREKABANK_SOAP_DOTNET_GR06\\Service1.svc.cs",
-              "ToolTip": "C:\\Users\\MATEO\\Desktop\\WS_EUREKABANK_SOAP_DOTNET_GR06\\WS_EUREKABANK_SOAP_DOTNET_GR06\\Service1.svc.cs",
+              "ToolTip": "C:\\Users\\MATEO\\Desktop\\Grupal\\TG.1.2.-PAO202651_EUREKA_BDD_LOCAL_SOAP_DOTNET_NRC36884_GR06\\04. SERVIDOR\\WS_EUREKABANK_SOAP_DOTNET_GR06\\WS_EUREKABANK_SOAP_DOTNET_GR06\\Service1.svc.cs",
               "RelativeToolTip": "WS_EUREKABANK_SOAP_DOTNET_GR06\\Service1.svc.cs",
               "ViewState": "AgIAAEYAAAAAAAAAAAAkwA0AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T20:53:28.282Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-03T20:53:28.282Z"
             }
           ]
         }
